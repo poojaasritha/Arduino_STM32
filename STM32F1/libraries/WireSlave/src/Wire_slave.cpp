@@ -37,7 +37,7 @@ extern "C" {
 TwoWire::TwoWire(i2c_dev* i2cDevice) :
   sel_hard(i2cDevice),
   rxBuffer(nullptr),
-  rxBufferAllocated(0),
+  rxBufferAllocated(1),
   rxBufferIndex(0),
   rxBufferLength(0),
   txBuffer(nullptr),
